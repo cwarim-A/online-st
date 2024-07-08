@@ -1,0 +1,23 @@
+/* components/pagination.module.css */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .pageItem {
+    margin: 0 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .pageItem:hover {
+    border-radius:50%;
+    background-color: #f0f0f0;
+  }
+  
+  .active {
+    border-radius:50%;
+    background-color: #f0f0f0;
+  }
+  
