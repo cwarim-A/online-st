@@ -70,7 +70,7 @@ const Navbar = () => {
         </div>
         <div className={styles.cartIcon}>
         <BsCart3 size={25} onClick={goToCart}  />
-        <span className={styles.cartNumber}>0</span>
+        <p className={styles.cartNumber}>0</p>
         </div>
          
           <Image alt="" src="/User.jpg" width={50} height={50} className={styles.user}/>

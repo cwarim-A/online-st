@@ -10,6 +10,7 @@ import { useState } from "react";
 import { useCart } from "@/app/context/CartContext";
 
 
+
 const Sidebar = () => {
   const pathname = usePathname();
   const { addToCart } = useCart();
@@ -24,16 +25,7 @@ const Sidebar = () => {
     { href: "/teens", label: "Prints for Teens" },
   ];
 
-  // const Cardcontent = [
-  //   {  label: "Art Prints" },
-  //   { label: "Canvas Prints" },
-  //   {  label: "Framed Prints" },
-  //   {  label: "Metal Prints" },
-  //   { label: "Acrylic Prints" },
-  //   {  label: "Wood Prints" },
-  //   {  label: "Prints for Teens" },
-  // ];
-
+ 
   const defaultLinkStyle = {
     // padding: '10px',
     textDecoration: "none",
@@ -151,7 +143,7 @@ const Sidebar = () => {
               <h2 className={styles.name}>{card.name}</h2>
               <p className={styles.subprice}>${card.subprice}</p>
               <p className={styles.reviews}>({card.reviews})</p>
-              <button className={styles.addtocart}>Add to Cart</button>
+              <button onClick={addToCart} className={styles.addtocart}>Add to Cart</button>
             </div>
             
           </>
